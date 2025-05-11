@@ -1,0 +1,51 @@
+<!--Index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive To-Do App</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand">! To-Do App ! </a>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <section class="input-section">
+            <h2>Add New Task</h2>
+            <form id="add-task-form">
+                <div class="form-group">
+                    <label for="task-title">Task Title:</label>
+                    <input type="text" id="task-title" class="form-control" placeholder="Enter task title" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-description">Description (Optional):</label>
+                    <textarea id="task-description" class="form-control" placeholder="Enter task description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h2>Your Tasks</h2>
+            <div class="task-overview">
+                <div class="progress-info">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progress"></div>
+                    </div>
+                    <span id="task-count">0 of 0 tasks</span>
+                </div>
+            </div>
+            <ul class="task-list" id="task-list">
+                </ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
